@@ -1,0 +1,12 @@
+﻿@{
+    ViewData["Title"] = "Dashboard";
+}
+
+<div class="container mt-5 text-center">
+    <h1 class="display-4">Halo, @Context.Session.GetString("Username") 👋</h1>
+    <p>Selamat datang di dashboard aplikasi Anda.</p>
+
+    <a asp-controller="Account" asp-action="Logout" class="btn btn-danger mt-3">
+        Logout
+    </a>
+</div>
